@@ -28,6 +28,10 @@
   /* Spacing */
   --spacing-section: 40px;
   --spacing-item: 20px;
+
+  /* Scroll */
+  --scroll-padding: 2rem;
+  --scroll-behavior: smooth;
 }
 
 .oswald-regular {
@@ -197,8 +201,8 @@
 }
 
 .home-subheading{
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
     font-weight: 300;
     margin: 0;
     margin-bottom: 1rem;
@@ -444,14 +448,15 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
+    gap: 1rem;
 }
 
 .footer-aboutus {
-    font-size: 1.5rem;
+    max-width: 48rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     font-weight: 300;
     margin: 0;
-    margin-top: 6rem;
     color: var(--color-text-secondary);
 }
 
@@ -510,4 +515,19 @@
     line-height: 1.5rem;
     font-weight: 300;
     color: var(--color-text-secondary);
+}
+
+#footerCopyright a{
+    color: var(--color-text-secondary);
+}
+
+/* 添加平滑滚动 */
+html {
+    scroll-behavior: var(--scroll-behavior);
+    scroll-padding-top: var(--scroll-padding);
+}
+
+/* 为锚点链接添加过渡效果 */
+a[href^="#"] {
+    transition: all 0.3s ease;
 }
