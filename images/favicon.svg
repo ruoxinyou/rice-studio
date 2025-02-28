@@ -1,0 +1,18 @@
+<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" transform="translate(0.285156 0.285706)" fill="#FAF9F8"/>
+<rect x="23.4219" y="6.03308" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 23.4219 6.03308)" fill="#E4E1DD"/>
+<rect x="23.4219" y="11.6331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 23.4219 11.6331)" fill="#D37155"/>
+<rect x="23.4219" y="17.2331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 23.4219 17.2331)" fill="#E4E1DD"/>
+<rect x="23.4219" y="22.8331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 23.4219 22.8331)" fill="#D37155"/>
+<rect x="17.8223" y="6.03308" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 17.8223 6.03308)" fill="#D37155"/>
+<rect x="17.8223" y="11.6331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 17.8223 11.6331)" fill="#E4E1DD"/>
+<rect x="17.8223" y="17.2331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 17.8223 17.2331)" fill="#D37155"/>
+<rect x="17.8223" y="22.8331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 17.8223 22.8331)" fill="#DAD7D2" fill-opacity="0.7"/>
+<foreignObject x="7.68906" y="5.03659" width="5.53009" height="5.52985"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(0.5px);clip-path:url(#bgblur_0_209_2359_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="0.996491" x="12.2227" y="6.03308" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 12.2227 6.03308)" fill="#D37155"/>
+<rect x="12.2227" y="11.6331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 12.2227 11.6331)" fill="#D37155"/>
+<rect x="12.2227" y="17.2331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 12.2227 17.2331)" fill="#D37155"/>
+<rect x="12.2227" y="22.8331" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 12.2227 22.8331)" fill="#D37155"/>
+<defs>
+<clipPath id="bgblur_0_209_2359_clip_path"><rect transform="translate(-7.68906 -5.03659)" x="12.2227" y="6.03308" width="3.53684" height="3.53684" rx="1.76842" transform="rotate(90 12.2227 6.03308)"/>
+</clipPath></defs>
+</svg>
