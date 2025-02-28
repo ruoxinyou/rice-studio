@@ -313,7 +313,7 @@
     padding: 1rem 0.5rem;
     color: var(--color-text-secondary); 
     background-color: var(--color-bg-secondary);
-    border-radius: 0.75rem;
+    border-radius: 0.25rem;
     border: none;
     cursor: not-allowed;
 }
