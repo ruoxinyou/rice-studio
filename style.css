@@ -1,0 +1,513 @@
+:root {
+  /* Border & Divider */
+  --color-border: #C1BBB6;
+  
+  /* Background Colors */
+  --color-bg-primary: #DDD7D0;
+  --color-bg-secondary: #C1BBB6;
+  
+  /* Text Colors */
+  --color-text-primary: #040402;
+  --color-text-secondary: #928C86;
+  
+  /* Boop Colors */
+  /* --color-boop-bg: #FFF5F5;
+  --color-boop-theme: #FF6B6B;
+   */
+  /* Rings Colors */
+  /* --color-rings-bg: #F3F0FF;
+  --color-rings-theme: #845EF7; */
+  
+  /* Planana Colors */
+  /* --color-planana-bg: #FFF9DB;
+  --color-planana-theme: #FAB005; */
+
+  /* Border */
+  --border-width: 2px;
+
+  /* Spacing */
+  --spacing-section: 40px;
+  --spacing-item: 20px;
+}
+
+.oswald-regular {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oswald-medium {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto; 
+    font-weight: 500;
+    font-style: normal;
+}
+
+.oswald-bold {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* global style */
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.page-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-primary);
+}
+
+.padding-global{
+    padding: 0 100px;     
+}
+
+.container-large{
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.padding-section{
+    padding: 0 var(--spacing-section);
+}
+
+.divider{
+    height: var(--border-width);
+    width: 100%;
+    background-color: var(--color-border);
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+}
+
+/* home page hero section */
+
+#homeHero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-hero-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    display: inline-grid;
+}
+
+.grid-item{
+    height: 10vh;
+    width: 10vh;
+    background-color: var(--color-bg-secondary);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.image-wrapper{
+    height: 10vh;
+    width: 10vh;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.image-wrapper .headshot{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+    z-index: 3;
+}
+
+.image-wrapper .bg{
+    background-color: var(--color-bg-secondary);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+}
+
+
+.image-wrapper .app-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+
+/* home page header section */
+
+#homeHeaderGrid{
+    position: relative;
+    padding: var(--spacing-section) 0;
+    width: 100%;
+}
+
+#homeHeaderGrid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--border-width);
+    background-color: var(--color-border);
+}
+
+/* .home-heading{
+    font-size: 12.5vw;
+    line-height: 0vw;
+    color: var(--color-text-primary);
+    text-wrap: nowrap;
+} */
+
+.rice-studio-heading{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 1rem 0;
+}
+
+#studioDescriptionWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: stretch;
+}
+
+.home-subheading{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+}
+
+/* home page project section */
+
+.project-section {
+    padding: var(--spacing-section) 0;
+    width: 100%;
+    position: relative;
+}
+
+.project-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--border-width);
+    background-color: var(--color-border);
+}   
+
+.grid-3x1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0px;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100%;
+    width: 100%;   
+}
+
+.project-grid-item.large {
+    grid-column: span 2;
+}
+
+.project-grid-item.small {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-grid-item.left {
+    padding-right: var(--spacing-section);
+    border-right: var(--border-width) solid var(--color-border);
+}
+
+.project-grid-item.right {
+    padding-left: var(--spacing-section);
+}
+
+.logo-wrapper{
+    max-width: 4rem;
+    max-height: 4rem;
+    margin-bottom: 6rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.logo-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.project-heading{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+}
+
+.project-subheading{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: var(--color-text-secondary);
+}
+
+.project-showcase{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-image-wrapper{
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin:0;
+}   
+
+#projectHeading .logo-wrapper img,
+#projectShowcase .project-showcase {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+
+.project-button{
+    width: 10rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 0.5rem;
+    color: var(--color-text-secondary); 
+    background-color: var(--color-bg-secondary);
+    border-radius: 0.75rem;
+    border: none;
+    cursor: not-allowed;
+}
+
+/* Google Play Badge 样式 */
+.google-play-badge {
+    max-width: 11rem;
+    height: auto;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1102px) {
+    /* 全局样式调整 */
+    .padding-global {
+        padding: 0 20px;
+    }
+    
+    /* 首页标题调整 */
+    .rice-studio-heading{
+        width: min(100%, 32rem);
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 1rem;
+    }
+    
+    .home-subheading {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .home-hero-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .grid-item {
+        height: min(96px, 15vw);
+        width: min(96px, 15vw);
+    }
+
+    .image-wrapper {
+        height: min(96px, 15vw);
+        width: min(96px, 15vw);
+    }
+
+    /* 项目展示区域调整 */
+    .grid-3x1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .project-grid-item.large {
+        grid-column: span 1;
+    }
+
+    .project-grid-item.left {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .project-grid-item.right {
+        padding-left: 0;
+        padding-top: var(--spacing-item);
+    }
+
+    #studioDescriptionWrapper {
+        padding-top: 0;
+    }
+
+    /* 项目内容样式调整 */
+    .logo-wrapper {
+        max-width: 3rem;
+        max-height: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-heading {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-subheading {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .project-button{
+        max-width: 8rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        font-weight: 300;
+    }
+
+    .google-play-badge {
+        max-width: 8rem; 
+    }
+
+    /* Rings项目特殊处理 */
+   #ringsProject .project-grid-item.right {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0 0 var(--spacing-section) 0;
+    }
+
+
+}
+
+/* footer section */
+
+#footerGrid{
+    position: relative;
+    padding: var(--spacing-section) 0;
+}
+
+#footerGrid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--border-width);
+    background-color: var(--color-border);
+}
+
+#footerGridItem1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.footer-aboutus {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 6rem;
+    color: var(--color-text-secondary);
+}
+
+#footerGridItem2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2rem;  
+    margin-top: 6rem;
+}
+
+.team-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.team-role {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.team-name {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    line-height: 2rem;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+#footerCopyright {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footerCopyright::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--border-width);
+    background-color: var(--color-border);
+}
+
+#footerCopyright p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--color-text-secondary);
+}
