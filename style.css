@@ -329,6 +329,104 @@
     object-fit: contain;
 }
 
+/* footer section */
+
+#footerGrid{
+    position: relative;
+    padding: var(--spacing-section) 0;
+}
+
+#footerGrid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--border-width);
+    background-color: var(--color-border);
+}
+
+#footerGridItem1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.footer-aboutus {
+    max-width: 48rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    margin: 0px;
+    color: var(--color-text-secondary);
+}
+
+#footerGridItem2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2rem;  
+    margin-top: 6rem;
+}
+
+.team-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.team-role {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.team-name {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    line-height: 2rem;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+#footerCopyright {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+#footerCopyright::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--border-width);
+    background-color: var(--color-border);
+}
+
+#footerCopyright p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+#footerCopyright a{
+    color: var(--color-text-secondary);
+}
+
+
 @media screen and (max-width: 1102px) {
     /* 全局样式调整 */
     .padding-global {
@@ -423,103 +521,19 @@
         padding: 0 0 var(--spacing-item) 0;
     }
 
+    #footerGridItem2{
+        margin-top: 2rem;
+    }
 
-}
+    #footerCopyright{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 
-/* footer section */
+    
 
-#footerGrid{
-    position: relative;
-    padding: var(--spacing-section) 0;
-}
 
-#footerGrid::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--border-width);
-    background-color: var(--color-border);
-}
-
-#footerGridItem1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 1rem;
-}
-
-.footer-aboutus {
-    max-width: 48rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    font-weight: 300;
-    margin: 0;
-    color: var(--color-text-secondary);
-}
-
-#footerGridItem2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 2rem;  
-    margin-top: 6rem;
-}
-
-.team-profile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-}
-
-.team-role {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 300;
-    margin: 0;
-    color: var(--color-text-secondary);
-}
-
-.team-name {
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    line-height: 2rem;
-    margin: 0;
-    color: var(--color-text-primary);
-}
-
-#footerCopyright {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#footerCopyright::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--border-width);
-    background-color: var(--color-border);
-}
-
-#footerCopyright p{
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 300;
-    color: var(--color-text-secondary);
-}
-
-#footerCopyright a{
-    color: var(--color-text-secondary);
-}
 
 /* 添加平滑滚动 */
 html {
@@ -530,40 +544,4 @@ html {
 /* 为锚点链接添加过渡效果 */
 a[href^="#"] {
     transition: all 0.3s ease;
-}
-
-/* Reset & Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden; /* 防止水平滚动 */
-}
-
-.page-wrapper {
-    width: 100%;
-    overflow: hidden; /* 确保内容不会溢出 */
-}
-
-/* 确保容器不会产生意外的边距 */
-.container-large {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-left: var(--spacing-section);
-    padding-right: var(--spacing-section);
-}
-
-@media screen and (max-width: 768px) {
-    .container-large {
-        padding-left: var(--spacing-item);
-        padding-right: var(--spacing-item);
-    }
 }
