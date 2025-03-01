@@ -26,8 +26,8 @@
   --border-width: 2px;
 
   /* Spacing */
-  --spacing-section: 40px;
-  --spacing-item: 20px;
+  --spacing-section: 2.5rem;
+  --spacing-item: 1.5rem;
 
   /* Scroll */
   --scroll-padding: 2rem;
@@ -508,11 +508,11 @@
         font-size: 1rem;
         line-height: 1.25rem;
         font-weight: 300;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 
     .google-play-badge {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         max-width: 8rem; 
     }
 
@@ -534,7 +534,7 @@
     }
 
     
-
+}
 
 
 /* 添加平滑滚动 */
@@ -546,4 +546,21 @@ html {
 /* 为锚点链接添加过渡效果 */
 a[href^="#"] {
     transition: all 0.3s ease;
+}
+
+/* 只添加必要的重置，保持其他样式不变 */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--color-bg-primary);
+}
+
+.page-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--color-bg-primary);
 }
