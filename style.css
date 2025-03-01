@@ -531,3 +531,39 @@ html {
 a[href^="#"] {
     transition: all 0.3s ease;
 }
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden; /* 防止水平滚动 */
+}
+
+.page-wrapper {
+    width: 100%;
+    overflow: hidden; /* 确保内容不会溢出 */
+}
+
+/* 确保容器不会产生意外的边距 */
+.container-large {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: var(--spacing-section);
+    padding-right: var(--spacing-section);
+}
+
+@media screen and (max-width: 768px) {
+    .container-large {
+        padding-left: var(--spacing-item);
+        padding-right: var(--spacing-item);
+    }
+}
