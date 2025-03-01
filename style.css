@@ -420,7 +420,7 @@
    #ringsProject .project-grid-item.right {
         grid-row-start: 1;
         grid-row-end: 1;
-        padding: 0 0 var(--spacing-section) 0;
+        padding: 0 0 var(--spacing-item) 0;
     }
 
 
