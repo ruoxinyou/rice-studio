@@ -1,0 +1,17 @@
+<svg width="35" height="48" viewBox="0 0 35 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="34.7812" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 34.7812 0)" fill="#E4E1DD"/>
+<rect x="34.7812" y="13.2174" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 34.7812 13.2174)" fill="#D37155"/>
+<rect x="34.7812" y="26.4348" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 34.7812 26.4348)" fill="#E4E1DD"/>
+<rect x="34.7812" y="39.6522" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 34.7812 39.6522)" fill="#D37155"/>
+<rect x="21.5645" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 21.5645 0)" fill="#D37155"/>
+<rect x="21.5645" y="13.2174" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 21.5645 13.2174)" fill="#E4E1DD"/>
+<rect x="21.5645" y="26.4348" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 21.5645 26.4348)" fill="#D37155"/>
+<rect x="21.5645" y="39.6522" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 21.5645 39.6522)" fill="#DAD7D2" fill-opacity="0.7"/>
+<foreignObject x="-2.35392" y="-2.35197" width="13.0516" height="13.0518"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(1.18px);clip-path:url(#bgblur_0_456_3154_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="2.35197" x="8.3457" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 8.3457 0)" fill="#D37155"/>
+<rect x="8.3457" y="13.2174" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 8.3457 13.2174)" fill="#D37155"/>
+<rect x="8.3457" y="26.4348" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 8.3457 26.4348)" fill="#D37155"/>
+<rect x="8.3457" y="39.6522" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 8.3457 39.6522)" fill="#D37155"/>
+<defs>
+<clipPath id="bgblur_0_456_3154_clip_path" transform="translate(2.35392 2.35197)"><rect x="8.3457" width="8.34783" height="8.34783" rx="4.17391" transform="rotate(90 8.3457 0)"/>
+</clipPath></defs>
+</svg>
