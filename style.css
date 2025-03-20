@@ -561,6 +561,18 @@
 }
 
 
+.landing-hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: var(--spacing-section);
+}
+
+.boop-project{
+    background-color:#FFFFFF;
+    --color-border: #F6F6F6;
+}
 
 
 @media screen and (max-width: 1102px) {
