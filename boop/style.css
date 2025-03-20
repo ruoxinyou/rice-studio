@@ -1,6 +1,19 @@
-.boop-project{
+*{
     background-color:#FFFFFF;
     --color-border: #F6F6F6;
+}
+html{
+    background-color: #FFFFFF;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.landing-hero{
+    padding-top: var(--spacing-section);
 }
 
 #boopLandingImage{
@@ -10,4 +23,6 @@
     max-width: 36rem;
     max-height:80vh;
 }
+
+
 
