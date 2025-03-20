@@ -24,5 +24,8 @@ body{
     max-height:80vh;
 }
 
+.team-profile a{
+    color: var(--color-text-secondary);
+}
 
 
