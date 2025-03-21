@@ -382,10 +382,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    gap:0.5rem;
+    gap:1rem 0.5rem;
 
 }
-
+/* Google Play Badge 样式 */
 .google-play-badge {
     width: 100%;
     height: 100%;
