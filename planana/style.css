@@ -1,0 +1,32 @@
+*{
+    background-color:#FFFFFF;
+    --color-border: #F6F6F6;
+    --color-text-secondary: #666666;
+}
+html{
+    background-color: #FFFFFF;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.landing-hero{
+    padding-top: var(--spacing-section);
+}
+
+#boopLandingImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 36rem;
+    max-height:80vh;
+}
+
+.team-profile a{
+    color: var(--color-text-secondary);
+}
+
+
